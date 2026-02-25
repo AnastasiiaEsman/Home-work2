@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>home3</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<h3>Ваши личные данные</h3>
+
+				<div>
+					<label for="id">
+						Ваше имя
+						<input
+							type="text"
+							id="id"
+							class="width"
+							placeholder="Имя"
+							required
+						/>
+					</label>
+				</div>
+
+				<div>
+					<label for="name">
+						Ваш возраст
+						<input
+							type="number"
+							id="name"
+							class="width"
+							inputmode="numeric"
+							placeholder="Возраст"
+							required
+						/>
+					</label>
+				</div>
+
+				<div>
+					<label for="tel">
+						Ваш номер телефона
+						<input
+							type="tel"
+							id="tel"
+							class="width"
+							inputmode="tel"
+							placeholder="Номер телефона"
+							required
+						/>
+					</label>
+				</div>
+
+				<div>
+					<label for="mail">
+						Ваша почта
+						<input
+							type="email"
+							class="width"
+							id="mail"
+							inputmode="email"
+							placeholder="Почта"
+							required
+						/>
+					</label>
+				</div>
+
+				<div>
+					<label>
+						Сообщение
+						<textarea
+							class="width"
+							placeholder="Ваше сообщение!"
+							name="massage"
+						></textarea>
+					</label>
+				</div>
+
+				<div>
+					<label for="push">
+						<input
+							type="checkbox"
+							id="push"
+							name="rules"
+							value="rules"
+							required
+						/>
+						Я принимаю условия
+					</label>
+				</div>
+
+				<div>
+					<button type="submit" class="button">Отправить</button>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

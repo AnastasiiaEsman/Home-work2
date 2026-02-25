@@ -1,0 +1,36 @@
+body {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+form {
+	display: block;
+	width: 249px;
+	padding: 5px;
+}
+fieldset {
+	border-radius: 10px;
+	background-color: rgb(243, 200, 238);
+}
+h3 {
+	color: rgb(51, 15, 50);
+}
+label {
+	color: rgb(51, 15, 50);
+}
+div {
+	padding-bottom: 10px;
+}
+.width {
+	margin-top: 10px;
+	width: 200px;
+}
+textarea {
+	resize: vertical;
+
+	min-height: 20px;
+	max-height: 100px;
+	overflow: auto;
+}
+.button {
+	cursor: pointer;
+}
