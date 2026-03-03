@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Cinzel";
+	src: url(../font/Cinzel-Regular.woff2) format("woff2");
+	font-display: swap;
+	font-style: normal;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: "Cinzel", serif;
+}
+.header-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	width: 80%;
+	gap: 20px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #958404;
+	background-color: rgb(247, 247, 243);
+	border-radius: 8px;
+}
+
+.links {
+	display: flex;
+	gap: 45px;
+}
+.link {
+	text-decoration: none;
+	color: #958404;
+}
+
+.number {
+	color: #958404;
+	text-decoration: none;
+}
