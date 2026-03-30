@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>home3</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<ul class="width">
+					<li>
+						<h3>Your personal information</h3>
+					</li>
+					<li>
+						<label for="id">
+							Your Name
+							<input
+								type="text"
+								id="id"
+								class="width"
+								placeholder="Имя"
+								required
+							/>
+						</label>
+					</li>
+
+					<li>
+						<label for="name">
+							Your age
+							<input
+								type="number"
+								id="name"
+								class="width"
+								inputmode="numeric"
+								placeholder="Возраст"
+								required
+							/>
+						</label>
+					</li>
+
+					<li>
+						<label for="tel">
+							Your phone number
+							<input
+								type="tel"
+								id="tel"
+								class="width"
+								inputmode="tel"
+								placeholder="Номер телефона"
+								required
+							/>
+						</label>
+					</li>
+
+					<li>
+						<label for="mail">
+							Your email
+							<input
+								type="email"
+								class="width"
+								id="mail"
+								inputmode="email"
+								placeholder="Почта"
+								required
+							/>
+						</label>
+					</li>
+
+					<li>
+						<label for="massage">
+							Message
+							<textarea
+								class="width"
+								placeholder="Ваше сообщение!"
+								name="massage"
+							></textarea>
+						</label>
+					</li>
+
+					<li>
+						<label for="push" class="checkbox-label">
+							<input
+								class="checkbox"
+								type="checkbox"
+								id="push"
+								name="rules"
+								value="rules"
+								required
+							/>
+							<span class="checkbox-text">Я принимаю условия</span>
+						</label>
+					</li>
+					<li>
+						<button type="submit" class="button">Отправить</button>
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+	</body>
+</html>

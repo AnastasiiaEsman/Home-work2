@@ -1,0 +1,109 @@
+@font-face {
+	font-family: "Cinzel";
+	src: url(../font/Cinzel-Regular.ttf) format("truetype");
+	font-display: swap;
+	font-style: normal;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Cinzel", serif;
+	min-height: 100vh;
+}
+
+form {
+	max-width: 400px;
+	width: 100%;
+	padding: 5px;
+}
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: rgb(15, 15, 71);
+	border: 3px solid rgb(178, 170, 14);
+}
+h3 {
+	color: rgb(178, 170, 14);
+}
+label {
+	display: flex;
+	flex-direction: column;
+	color: rgb(178, 170, 14);
+}
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+.width {
+	margin-top: 10px;
+	width: 100%;
+}
+textarea {
+	resize: vertical;
+	min-height: 30px;
+	max-height: 150px;
+}
+.checkbox-label {
+	padding-left: 22px;
+}
+.checkbox {
+	position: absolute;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.checkbox::after {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-left: -22px;
+	border: 1px solid #333;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.checkbox:checked::after {
+	background:
+		url("../images/check-icon.svg") no-repeat center,
+		#05ec3f;
+}
+
+.checkbox-text {
+	font-size: 13px;
+}
+
+.button {
+	border: none;
+	border-radius: 6px;
+	padding: 6px 18px;
+	background-color: rgb(178, 170, 14);
+	cursor: pointer;
+	transition: 0.2s;
+}
+.button:hover {
+	background-color: rgb(210, 200, 20);
+}
+.button:active {
+	background-color: rgb(117, 113, 36);
+}
+.input:focus-visible,
+.textarea:focus-visible,
+.checkbox:checked::after,
+.button:focus-visible {
+	outline: 1px solid rgb(178, 170, 14);
+	outline-offset: 1px;
+}
